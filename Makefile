@@ -59,4 +59,19 @@ $(OBJ_DIR)/test_bridge.o: $(TEST_DIR)/test_bridge.c
 clean:
 	rm -rf $(OBJ_DIR) $(TARGET) $(TEST_TARGET)
 
+PREFIX = /usr/local
+BINDIR = $(PREFIX)/bin
+
+install: $(TARGET)
+	@echo "Installing $(TARGET) to $(BINDIR)..."
+	@mkdir -p $(BINDIR)
+	@cp $(TARGET) $(BINDIR)/$(TARGET)
+	@chmod 755 $(BINDIR)/$(TARGET)
+	@echo "Installation successful!"
+
+uninstall:
+	@echo "Removing $(TARGET) from $(BINDIR)..."
+	@rm -f $(BINDIR)/$(TARGET)
+	@echo "Uninstallation successful!"
+
 .PHONY: all clean test
