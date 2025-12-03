@@ -8,7 +8,7 @@
 
 Built with **Modern C (C23)** and a **C++17 Bridge**, it provides a minimal yet powerful interface for reading scripture directly from your terminal. It is designed for developers and system enthusiasts who prefer speed and efficiency over GUI applications.
 
-[한국어 버전](https://github.com/DevNathan/Hilt/blob/master/doc/RMkr)
+[한국어 버전](https://github.com/DevNathan/Hilt/blob/master/doc/RMkr.md)
 
 ---
 
